@@ -6,5 +6,5 @@ Made as part of [freeCodeCamp](https://www.freecodecamp.com/challenges/build-a-s
 Other [challenges](https://www.freecodecamp.com/cirych)
 
 Start game:
-[codepen](http://codepen.io/Cirych/pen/), 
+[codepen](http://codepen.io/Cirych/full/EVjNzL/), 
 [github](http://cirych.github.io/freeCodeCamp-SimonGame/)
