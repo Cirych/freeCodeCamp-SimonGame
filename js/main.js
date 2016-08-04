@@ -40,6 +40,13 @@ window.onload = (function() {
 	//Array.from(document.getElementsByClassName('button'))
 	[].forEach.call(document.getElementsByClassName('button'), function(button, index){
 		button.addEventListener('mousedown', function(event) {
+			event.stopPropagation();
+			if(config.on) {
+				pushButton(index);
+			};
+		});
+		button.addEventListener('ontouchstart', function(event) {
+			event.stopPropagation();
 			if(config.on) {
 				pushButton(index);
 			};
@@ -47,6 +54,10 @@ window.onload = (function() {
 		config.buttons.push(button);
 	});
 	document.addEventListener('mouseup', function(event) {
+			event.stopPropagation();
+			stopSound();
+		});
+	document.addEventListener('ontouchend', function(event) {
 			event.stopPropagation();
 			stopSound();
 		});
